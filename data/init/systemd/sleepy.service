@@ -1,0 +1,12 @@
+[Unit]
+Description=Sleepy web application server
+
+[Service]
+User=http
+Group=http
+
+PIDFile=/var/run/sleepy/sleepy.pid
+ExecStart=/usr/bin/sleepyd
+
+[Install]
+WantedBy=multi-user.target
