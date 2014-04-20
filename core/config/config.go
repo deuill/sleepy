@@ -188,8 +188,7 @@ func Load(conf string) (*Config, error) {
 
 	c := new(Config)
 
-	*c, error = parse(conf)
-	if error != nil {
+	if c, error = parse(conf); error != nil {
 		return nil, error
 	}
 
@@ -215,7 +214,7 @@ func (c *Config) exists(section, option string) (bool, error) {
 
 // Parse parses the configuration file in 'conf' and returns the data
 // as values mapped to options, mapped to sections.
-func parse(conf string) (map[string]map[string]interface{}, error) {
+func parse(conf string) (*map[string]map[string]interface{}, error) {
 	c, err := goconfig.ReadConfigFile(conf)
 	if err != nil {
 		return nil, err
@@ -237,5 +236,5 @@ func parse(conf string) (map[string]map[string]interface{}, error) {
 		}
 	}
 
-	return data, nil
+	return &data, nil
 }
