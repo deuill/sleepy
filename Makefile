@@ -21,7 +21,7 @@ $(PROGRAM):
 	@echo -e "\033[1mBuilding '$(PROGRAM)'...\033[0m"
 
 	@mkdir -p .tmp
-	@go build -compiler $(COMPILER) -o .tmp/$(PROGRAM) ./core
+	@go build -compiler $(COMPILER) -o .tmp/$(PROGRAM)
 
 install:
 	@echo -e "\033[1mInstalling binaries...\033[0m"
