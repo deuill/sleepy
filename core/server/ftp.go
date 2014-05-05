@@ -144,6 +144,8 @@ func (s *ftpSession) storeFile(name string) {
 		return
 	}
 
+	defer file.Close()
+
 	io.Copy(file, conn)
 	s.respond("226 File transfer successful")
 }
