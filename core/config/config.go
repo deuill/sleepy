@@ -184,13 +184,14 @@ func Merge(conf ...*Config) (*Config, error) {
 // a new Config type. If the configuration file cannot be found,
 // the function returns nil and an error message.
 func Load(conf string) (*Config, error) {
-	var error error
-
 	c := new(Config)
 
-	if c, error = parse(conf); error != nil {
-		return nil, error
+	data, err := parse(conf)
+	if err != nil {
+		return nil, err
 	}
+
+	*c = data
 
 	return c, nil
 }
@@ -214,7 +215,7 @@ func (c *Config) exists(section, option string) (bool, error) {
 
 // Parse parses the configuration file in 'conf' and returns the data
 // as values mapped to options, mapped to sections.
-func parse(conf string) (*map[string]map[string]interface{}, error) {
+func parse(conf string) (map[string]map[string]interface{}, error) {
 	c, err := goconfig.ReadConfigFile(conf)
 	if err != nil {
 		return nil, err
@@ -236,5 +237,5 @@ func parse(conf string) (*map[string]map[string]interface{}, error) {
 		}
 	}
 
-	return &data, nil
+	return data, nil
 }
