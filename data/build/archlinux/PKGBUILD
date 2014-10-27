@@ -1,9 +1,9 @@
-# Maintainer: Alex Palaistras <thoughtmonster[at]gmail[dot]com>
+# Maintainer: Alex Palaistras <alex[at]deuill[dot]org>
 pkgname=sleepy
 pkgver=0.5.0
 pkgrel=1
 pkgdesc="Sleepy is a lightweight web framework."
-url="http://thoughtmonster.org/sleepy"
+url="http://deuill.org/sleepy"
 arch=('x86_64' 'i686')
 license=('MIT')
 install='sleepy.install'

@@ -5,7 +5,7 @@
 package user
 
 import (
-	"github.com/thoughtmonster/sleepy/core/config"
+	"github.com/deuill/sleepy/core/config"
 )
 
 func (u *User) Conf(module string) (*config.Config, error) {

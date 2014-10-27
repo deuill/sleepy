@@ -7,8 +7,8 @@
 package user
 
 import (
-	"github.com/thoughtmonster/sleepy/core/server"
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/server"
+	"github.com/deuill/sleepy/core/user"
 )
 
 type User struct {}

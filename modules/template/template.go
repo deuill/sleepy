@@ -13,8 +13,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/thoughtmonster/sleepy/core/config"
-	"github.com/thoughtmonster/sleepy/core/server"
+	"github.com/deuill/sleepy/core/config"
+	"github.com/deuill/sleepy/core/server"
 	"github.com/Wuvist/mustache"
 )
 

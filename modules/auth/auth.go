@@ -8,7 +8,7 @@ package auth
 
 import (
 	"code.google.com/p/go.crypto/bcrypt"
-	"github.com/thoughtmonster/sleepy/core/server"
+	"github.com/deuill/sleepy/core/server"
 )
 
 type Auth struct {}

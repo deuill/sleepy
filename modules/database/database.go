@@ -15,9 +15,9 @@ import (
 
 	"github.com/bradfitz/gomemcache/memcache"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/thoughtmonster/sleepy/core/config"
-	"github.com/thoughtmonster/sleepy/core/server"
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/config"
+	"github.com/deuill/sleepy/core/server"
+	"github.com/deuill/sleepy/core/user"
 )
 
 type Database struct {

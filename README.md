@@ -8,7 +8,7 @@ web application, is opinionated but tries to keep its conventions at a minimum.
 
 This repository contains the server part of Sleepy, written in Go, which runs as
 a daemon and is in general never directly used. For more information on the Sleepy
-client, written in PHP, check the corresponding [repository](https://github.com/thoughtmonster/sleepy-client).
+client, written in PHP, check the corresponding [repository](https://github.com/deuill/sleepy-client).
 
 Be aware that this is **alpha software**, and as such may crash your computer/eat
 puppies/hide your socks. However, I have been running Sleepy on my own servers
@@ -42,7 +42,7 @@ Running Sleepy is simply a matter of running the ```sleepyd``` binary, installed
 ### Anything else?
 
 Sleepy is not of much use alone, so you most likely want to set up the client
-framework. For help, check the Sleepy client's [repository](https://github.com/thoughtmonster/sleepy-client).
+framework. For help, check the Sleepy client's [repository](https://github.com/deuill/sleepy-client).
 
 ### License
 

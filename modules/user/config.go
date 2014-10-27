@@ -5,7 +5,7 @@
 package user
 
 import (
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/user"
 )
 
 type GetRequest struct {

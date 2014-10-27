@@ -32,9 +32,9 @@ start() {
 	echo -n "Starting $DESC: "
 	mkdir -p /var/run/sleepy
 	chown -R $USER:$USER /var/run/sleepy
-	start-stop-daemon --start --background --quiet \
-					  --make-pidfile --pidfile $PID_FILE \
-					  --exec $DAEMON -- "$OPTS > /var/log/$NAME.log 2>&1" || true
+		start-stop-daemon --start --background --quiet --chuid $USER:$USER \
+		                  --make-pidfile --pidfile $PID_FILE \
+		                  --exec $DAEMON > /var/log/$NAME.log 2>&1 || true
 	echo "$NAME."
 }
 

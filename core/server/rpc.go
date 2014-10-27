@@ -14,8 +14,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/thoughtmonster/sleepy/core/config"
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/config"
+	"github.com/deuill/sleepy/core/user"
 )
 
 // A table of module methods registered to be called.

@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thoughtmonster/sleepy/core/config"
-	"github.com/thoughtmonster/sleepy/core/server"
+	"github.com/deuill/sleepy/core/config"
+	"github.com/deuill/sleepy/core/server"
 )
 
 type Email struct {

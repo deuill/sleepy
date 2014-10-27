@@ -21,18 +21,18 @@ import (
 	"syscall"
 
 	"github.com/spf13/cobra"
-	"github.com/thoughtmonster/sleepy/core/config"
-	"github.com/thoughtmonster/sleepy/core/server"
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/config"
+	"github.com/deuill/sleepy/core/server"
+	"github.com/deuill/sleepy/core/user"
 
 	// Internal modules
-	_ "github.com/thoughtmonster/sleepy/modules/auth"
-	_ "github.com/thoughtmonster/sleepy/modules/database"
-	_ "github.com/thoughtmonster/sleepy/modules/email"
-	_ "github.com/thoughtmonster/sleepy/modules/file"
-	_ "github.com/thoughtmonster/sleepy/modules/image"
-	_ "github.com/thoughtmonster/sleepy/modules/template"
-	_ "github.com/thoughtmonster/sleepy/modules/user"
+	_ "github.com/deuill/sleepy/modules/auth"
+	_ "github.com/deuill/sleepy/modules/database"
+	_ "github.com/deuill/sleepy/modules/email"
+	_ "github.com/deuill/sleepy/modules/file"
+	_ "github.com/deuill/sleepy/modules/image"
+	_ "github.com/deuill/sleepy/modules/template"
+	_ "github.com/deuill/sleepy/modules/user"
 )
 
 var flags struct {

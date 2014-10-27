@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/thoughtmonster/sleepy/core/user"
+	"github.com/deuill/sleepy/core/user"
 )
 
 type ftpSession struct {
